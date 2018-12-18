@@ -4,7 +4,8 @@
   "description": "simple app for tasks built with MERN (Mongo, Express, React y Node) stack.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "mern",
@@ -15,7 +16,9 @@
   "author": "Anderson Mosquera",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
