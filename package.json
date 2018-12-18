@@ -1,0 +1,23 @@
+{
+  "name": "mern-stack-tasks",
+  "version": "1.0.0",
+  "description": "simple app for tasks built with MERN (Mongo, Express, React y Node) stack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mern",
+    "nodejs",
+    "react",
+    "express"
+  ],
+  "author": "Anderson Mosquera",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
