@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const path = require('path');
 
 const indexRouter = require('./routes/index.routes');
 const tasksApiRouter = require('./routes/api/tasks.routes');
@@ -17,11 +18,11 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 // Routes
-app.use('/', indexRouter);
+// app.use('/', indexRouter);
 app.use('/api/tasks', tasksApiRouter);
 
 // Static File
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Starting server
 app.listen(app.get('port'), () => {
