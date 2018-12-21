@@ -4,6 +4,7 @@ const path = require('path');
 
 const indexRouter = require('./routes/index.routes');
 const tasksApiRouter = require('./routes/api/tasks.routes');
+const tasksRouter = require('./routes/tasks.routes');
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(express.json());
 // Routes
 // app.use('/', indexRouter);
 app.use('/api/tasks', tasksApiRouter);
+app.use('/tasks', tasksRouter);
 
 // Static File
 app.use(express.static(path.join(__dirname, 'public')));

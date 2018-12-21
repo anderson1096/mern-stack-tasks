@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import Navbar from './navbar';
-import Banner from './banner';
-
+import Header from './header';
+import Tasks from './tasks';
 
 class App extends Component{
     render(){
         return(
             <div>
                 <Navbar />
-                <Banner />
+                <Header />
+                <Tasks />
             </div>
         );
     }

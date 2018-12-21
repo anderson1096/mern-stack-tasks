@@ -12,12 +12,7 @@ class Navbar extends Component{
                     </a>
                     <div className="collapse navbar-collapse " id="navbarText">
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item active">
-                                <a className="nav-link" href="#">Inicio</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Tareas</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </nav>  
