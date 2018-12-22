@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import '../../public/css/tasks.css';
 
 class Tasks extends Component{
     constructor(){
@@ -149,9 +149,9 @@ class Tasks extends Component{
                         </div>
                     </div>
                     <div className="col-md-8">
-                        <div>
-                            <table className="table">
-                                <thead>
+                        <div className="container">
+                            <table className="table table-hover">
+                                <thead className="thead-dark">
                                     <tr>
                                         <th>Título</th>
                                         <th>Descripción</th>
@@ -166,8 +166,8 @@ class Tasks extends Component{
                                                     <td>{task.title}</td>
                                                     <td>{task.description}</td>
                                                     <td>
-                                                        <button onClick={() => this.editTask(task._id)} className="btn btn-primary"><i className="fas fa-edit"></i></button>
-                                                        <button onClick={() => this.deleteTask(task._id)} className="btn btn-primary"><i className="fas fa-trash-alt"></i></button>
+                                                        <button id="btn-edit" onClick={() => this.editTask(task._id)} className="btn btn-primary"><span><i className="fas fa-edit"></i></span></button>
+                                                        <button id="btn-delete" onClick={() => this.deleteTask(task._id)} className="btn btn-primary"><span><i className="fas fa-trash-alt"></i></span></button>
                                                     </td>
                                                 </tr>
                                             );
