@@ -3,6 +3,6 @@ Aplicación sencilla para manejo de tareas construida con el MERN (Mongo, Expres
 
 Además incluye el uso de Webpack y Babel.
 
-![Tasks - Mern Stack](public/img/mern-stack-tasks.png)
+![Tasks](src/public/img/mern-stack-tasks.png)
 
 El proyecto se encuentra alojado en [Heroku](https://mern-stack-tasks.herokuapp.com) 
